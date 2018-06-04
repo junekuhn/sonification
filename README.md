@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+p5.js examples require a simple server to host external files.
 
-You can use the [editor on GitHub](https://github.com/trampbunny/trampbunny.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Creating a local server
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There are many different ways to create a [local server](https://github.com/processing/p5.js/wiki/Local-server). Here are some:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+If you use node and npm you can install `live-server`: 
+```zsh
+npm install -g live-server
+```
+And then run from the root:
+```
+live-server
+```
+If you use python 2:
+```zsh
+python -m SimpleHTTPServer
+```
+In python 3
+```
+python3 -m http.server
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/trampbunny/trampbunny.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Then, in the browser of your choice (we'll be using Chrome), navigate to http://localhost:8000/ in your url bar.
